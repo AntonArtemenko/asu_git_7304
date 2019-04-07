@@ -424,7 +424,7 @@ Ship = function () {
             // move to the nose of the ship
             bullet.x = this.x + vectorx * 4;
             bullet.y = this.y + vectory * 4;
-            bullet.vel.x = 6 * vectorx + this.vel.x;
+            bullet.vel.x = 5 * vectorx + this.vel.x;
             bullet.vel.y = 6 * vectory + this.vel.y;
             bullet.visible = true;
             break;
@@ -621,7 +621,7 @@ BigAlien = function () {
           var vectory = Math.sin(rad);
           bullet.x = this.x;
           bullet.y = this.y;
-          bullet.vel.x = 6 * vectorx;
+          bullet.vel.x = 5 * vectorx;
           bullet.vel.y = 6 * vectory;
           bullet.visible = true;
           SFX.laser().play();
